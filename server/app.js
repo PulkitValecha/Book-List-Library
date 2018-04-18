@@ -9,7 +9,9 @@ const app = express()
 //allow cross origin request
 app.use(cors())
 
-mongoose.connect('mongodb://cybersage:cybersage@ds115131.mlab.com:15131/graphql_reactjs',()=>{
+
+//Configure your own mLab db here
+mongoose.connect('',()=>{
     console.log("Connected to mLab")
 })
 
