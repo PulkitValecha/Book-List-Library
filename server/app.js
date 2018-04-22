@@ -11,9 +11,9 @@ app.use(cors())
 
 
 //Configure your own mLab db here
-mongoose.connect('',()=>{
-    console.log("Connected to mLab")
-})
+mongoose.connect('')
+    .then(()=>console.log("Connected to mLab"))
+    .catch(err=>console.log(err))
 
 
 
