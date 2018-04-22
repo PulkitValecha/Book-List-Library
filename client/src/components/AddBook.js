@@ -52,6 +52,9 @@ class AddBook extends React.Component{
             },
             refetchQueries:[{query:getBooksQuery}]
         })
+
+        e.target.reset()
+
     }
 
     render(){
@@ -70,7 +73,7 @@ class AddBook extends React.Component{
 
                 <div className="field">
                     <label>Author: </label>
-                    <select onChange={(e)=>this.setState({authorId:e.target.value})}>
+                    <select required onChange={(e)=>this.setState({authorId:e.target.value})}>
                         {this.displayAuthors()}
                     </select>
                 </div>
