@@ -16,6 +16,8 @@ body{
 }
 
 #book-list{
+    display: inline-block;
+    width: 60%;
     padding: 0;
 }
 
